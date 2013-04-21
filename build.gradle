@@ -1,0 +1,24 @@
+apply plugin: 'golo'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url = 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    }
+
+    dependencies {
+        classpath 'org.golo-lang:gradle-golo-plugin:0.1-SNAPSHOT'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    golo 'org.golo-lang:golo:0-preview2'
+}
+
+golo {
+    mainModule = 'hello.World'
+}

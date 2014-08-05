@@ -1,3 +1,5 @@
+apply from: 'gradle/idea.gradle'
+
 apply plugin: 'golo'
 
 buildscript {

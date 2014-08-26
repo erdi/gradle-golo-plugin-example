@@ -1,16 +1,8 @@
-apply from: 'gradle/idea.gradle'
-
-apply plugin: 'golo'
-
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'org.golo-lang:gradle-golo-plugin:0.4'
-    }
+plugins {
+    id 'org.golo-lang.golo' version '0.5'
 }
+
+apply from: 'gradle/idea.gradle'
 
 repositories {
     mavenCentral()
